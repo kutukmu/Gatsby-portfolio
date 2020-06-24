@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+@import "../../main.scss";
+header{
+    width:100%;
+    height:10vh;
+    background: $light-blue;
+    display: flex;
+    align-items: center;
+    .container{
+        .wrapper{
+            .inner{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                .logo{
+                    font-family: $fontfamily;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+                .nav{
+                   
+                    ul{
+                       
+                        list-style:none;
+                        display: flex;
+                        margin:0;
+                        padding:0;
+                      
+                        li{
+                            margin:0;
+                            padding:0;
+                            a{
+                                font-family: $fontfamily;
+                            color:$green;
+                            padding:1rem;
+                            display: block;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            font-size: 1rem;
+                            &:hover{
+                                background-color: lighten($light-blue, 10%) ;
+                            }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
