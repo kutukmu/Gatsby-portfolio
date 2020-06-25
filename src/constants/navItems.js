@@ -24,7 +24,7 @@ const navItems = [
 ]
 
 const items = navItems.map((n, idx) => {
-    return <li><Link to={n.url}>{n.name}</Link></li>
+    return <li key={idx}><Link to={n.url}>{n.name}</Link></li>
 })
 
 const Navbar = ({ side }) => {

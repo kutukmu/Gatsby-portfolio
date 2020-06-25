@@ -1,0 +1,83 @@
+@import "../../variables.scss";
+@import "../../main.scss";
+
+.jobs{
+   width:100%;
+   height: 90vh;
+   background: $blue;
+   
+
+    .inner{
+        width:70%;
+        margin:0 auto;
+        border:1px solid red;
+        height: 50vh;
+        margin-top:50px;
+        display: flex;
+        .buttons{
+            height: 100%;
+            width:13%;
+            border:1px solid yellow;
+            display: flex;
+            flex-direction: column;
+            
+            button{
+                display: block;
+                width:120px;
+                height: 50px;
+                font-size: 18px;
+                background: $blue;
+                
+                color:white;
+                border:none;
+                cursor:pointer;
+                text-transform: uppercase;
+
+            }
+
+        }
+        .info{
+            height: 100%;
+            width:90%;
+            padding:1rem;
+            border:1px solid blue;
+            .compName{
+                h1{
+
+                }
+            }
+
+            .detail{
+                display: flex;
+                border:1px solid red;
+                width:50%;
+                justify-content: space-between;
+
+                .location{
+                    display: flex;
+                    align-items: center;
+
+                    h4{
+                        margin-left:5px
+                    }
+                }
+            }
+
+            .description{
+               margin-top:1rem;
+                .textIcon{
+                    display: flex;
+                    margin-top:10px;
+                    .icon{
+                        margin-right: 10px;
+                    }
+                    p{
+
+                    }
+                }
+            }
+        }
+
+        
+    }
+}

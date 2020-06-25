@@ -10,8 +10,8 @@ const Services = () => {
             <div className={style.container}>
                 <div className={style.wrapper}>
                     <div className={style.inner}>
-                        {services.map(n => {
-                            return <div className={style.card}>
+                        {services.map((n, idx) => {
+                            return <div key={idx} className={style.card}>
 
                                 <div className={style.icon}>
                                     {n.icon}
