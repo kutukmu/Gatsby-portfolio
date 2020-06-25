@@ -1,0 +1,62 @@
+@import "../../variables.scss";
+@import "../../main.scss";
+
+.hero{
+    width:100%;
+
+   
+    .container{
+        .wrapper{
+            .inner{
+                width:100%;
+                height: 90vh;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content:center;
+                .line{
+                   overflow: hidden;
+                    height: 85px;
+                    
+                    margin-bottom: .8rem;
+                    &:nth-child(1){
+                        height: 40px;
+                        margin-bottom: 0;
+                    }
+                }
+                h5{
+                    font-size: 1.5rem;
+                }
+                h1{
+                    font-size: 4.5rem;
+                }
+                h3{
+                    
+                    font-size: 3.5rem;
+                }
+                p{
+                    width:25vw;
+                    line-height: 1.6;
+                }
+                .touch{
+                    margin-top:1rem;
+                    border-radius: 5px;
+                    background: $blue;
+                    width:8vw;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        text-decoration: none;
+                        color:$white;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                    
+                    }
+                }
+                
+            }
+        }
+    }
+}

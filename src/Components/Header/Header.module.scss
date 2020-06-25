@@ -3,7 +3,7 @@
 header{
     width:100%;
     height:10vh;
-    background: $light-blue;
+    background: $blue;
     display: flex;
     align-items: center;
     .container{
@@ -13,10 +13,19 @@ header{
                 justify-content: space-between;
                 align-items: center;
                 .logo{
-                    font-family: $fontfamily;
-                    font-size: 24px;
-                    text-transform: uppercase;
-                    font-weight: 700;
+                
+                    a{
+                        text-decoration: none;
+                        font-family: $fontfamily;
+                        font-size: 24px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        color:white;
+                        &:hover{
+                            color:white;
+                        }
+
+                    }
                 }
                 .nav{
                    
@@ -32,15 +41,15 @@ header{
                             padding:0;
                             a{
                                 font-family: $fontfamily;
-                            color:$green;
+                            color:$white;
                             padding:1rem;
                             display: block;
                             border-radius: 5px;
                             text-decoration: none;
                             font-size: 1rem;
-                            &:hover{
-                                background-color: lighten($light-blue, 10%) ;
-                            }
+                                &:hover{
+                                    color:black;
+                                }
 
                             }
                         }

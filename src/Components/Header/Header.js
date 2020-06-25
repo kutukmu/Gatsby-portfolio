@@ -8,7 +8,7 @@ const Header = () => {
         <div className={style.container}>
             <div className={style.wrapper}>
                 <div className={style.inner}>
-                    <div className={style.logo}>KerimK.</div>
+                    <div className={style.logo}><Link to="/">KerimK.</Link></div>
                     <nav className={style.nav}>
                         <Navbar />
                     </nav>
