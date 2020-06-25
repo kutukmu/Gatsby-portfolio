@@ -48,12 +48,28 @@ header{
                             text-decoration: none;
                             font-size: 1rem;
                                 &:hover{
-                                    color:black;
+                                    color:rgba(201, 201, 201, 0.623);
                                 }
 
                             }
                         }
                     }
+                }
+
+                .cv{
+                    a{
+                        text-decoration: none;
+                        color:white;
+                        padding:.7rem 2.5rem;
+                        border:1px solid white;
+                        border-radius: 10px;
+
+                        &:hover{
+                            background: white;
+                            color:$blue;
+                        }
+                    }
+                   
                 }
             }
         }

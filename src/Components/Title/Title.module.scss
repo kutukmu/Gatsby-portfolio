@@ -1,0 +1,19 @@
+@import "../../variables.scss";
+@import "../../main.scss";
+
+.title{
+    width:100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .text{
+        
+    }
+    .underline{
+        width:15vw;
+        height: 20px;
+        background-color: $blue;
+    }
+}
