@@ -61,12 +61,12 @@ header{
                         text-decoration: none;
                         color:white;
                         padding:.7rem 2.5rem;
-                        border:1px solid white;
                         border-radius: 10px;
+                        background: $ligth-blue;
 
                         &:hover{
                             background: white;
-                            color:$blue;
+                            color:$ligth-blue;
                         }
                     }
                    

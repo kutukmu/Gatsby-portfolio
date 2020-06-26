@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Jobs.module.scss"
 import { useStaticQuery, graphql } from 'gatsby'
 import { GoLocation } from "react-icons/go"
@@ -28,50 +28,52 @@ const query = graphql`
 
 const Jobs = () => {
 
+    const [state, setState] = useState(0)
+
     const { allStrapiJobs: { nodes: jobs } } = useStaticQuery(query)
 
-    const { City, Company, Date, Position, Description } = jobs
+    const { City, Company, Date, Position, Description } = jobs[state]
 
-    console.log(jobs)
+    console.log(City, Company, Date, Position, Description)
     return (
         <div className={style.jobs}>
-            <Title title="Experience" color="white" />
+            <Title title="Experience" color="black" />
             <div className={style.container}>
                 <div className={style.wrapper}>
                     <div className={style.inner}>
                         <div className={style.buttons}>
-                            <button>Uber</button>
-                            <button>Uber</button>
-                            <button>Uber</button>
+                            {jobs.map((n, idx) => {
+                                return <button onClick={() => setState(idx)} className={(idx === state) ? style.active : ""}>{n.Company}</button>
+                            })}
+
+
                         </div>
                         <div className={style.info}>
                             <div classname={style.compName}>
-                                <h1>Uber</h1>
+                                <h1>{Company}</h1>
                             </div>
                             <div className={style.detail}>
-                                <h4>Position</h4>
-                                <h4>Date</h4>
+                                <h4>{Position}</h4>
+                                <h4>{Date}</h4>
                                 <div className={style.location}>
                                     <GoLocation />
-                                    <h4>Location</h4>
+                                    <h4>{City}</h4>
                                 </div>
 
                             </div>
                             <div className={style.description}>
-                                <div className={style.textIcon}>
-                                    <div className={style.icon}>
-                                        <FaAngleDoubleRight />
-                                    </div>
 
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu</p>
-                                </div>
-                                <div className={style.textIcon}>
-                                    <div className={style.icon}>
-                                        <FaAngleDoubleRight />
-                                    </div>
+                                {
+                                    Description.map(n => {
+                                        return <div className={style.textIcon}>
+                                            <div className={style.icon}>
+                                                <FaAngleDoubleRight />
+                                            </div>
 
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsu</p>
-                                </div>
+                                            <p>{n.name}</p>
+                                        </div>
+                                    })
+                                }
                             </div>
                         </div>
                     </div>
