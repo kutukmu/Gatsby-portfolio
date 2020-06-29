@@ -35,8 +35,8 @@ const Hero = () => {
 
         gsap.from([line1.children, line2.children, line3.children], {
             delay: 1,
-            duration: 1.3,
-            y: 100,
+            duration: 1.1,
+            y: 120,
             ease: "power3.inOut",
             skewY: 5,
             stagger: {

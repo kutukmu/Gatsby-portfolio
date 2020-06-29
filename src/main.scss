@@ -12,7 +12,30 @@
 .container{
     width:80vw;
     margin:0 auto;
+
+    .wrapper{
+        width: 100%;
+    }
     
 }
 
+
+.about{
+    .about-inner{
+        width:100%;
+        display: flex;
+
+        .about-inner-left{
+            width:50%;
+            height: 100vh;
+            border:1px solid red;
+        }
+
+        .about-inner-rigth{
+            width:50%;
+            height: 100vh;
+            border:1px solid blue;
+        }
+    }
+}
 

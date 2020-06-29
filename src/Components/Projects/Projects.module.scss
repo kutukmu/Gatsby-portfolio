@@ -1,0 +1,38 @@
+@import "../../variables.scss";
+@import "../../main.scss";
+
+
+.projects{
+    text-align:center;
+    width: 100%;
+    padding:2rem 0;
+
+    .inner{
+        width:100%;
+        
+        .project{
+            width:100%;
+           
+        }
+    }
+
+    .seemore{
+        text-decoration: none;
+        padding: 1rem 2rem;
+        background: $ligth-blue;
+        display: inline-block;
+        color:white;
+        border:1px solid $ligth-blue;
+        margin-top:2rem;
+
+
+        &:hover{
+            background: none;
+            
+            color:$ligth-blue;
+        }
+        
+
+
+    }
+}

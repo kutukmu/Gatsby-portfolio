@@ -1,0 +1,41 @@
+@import "../../variables.scss";
+@import "../../main.scss";
+
+.blog{
+    width:100%;
+    height: 100%;
+    .img{
+        width:100%;
+        height: 50%;
+        
+        .giamge{
+            width:100%;
+            height: 100%;
+        }
+    }
+
+    .desc{
+        width:100%;
+        height: 35%;
+      
+        padding: .7rem;
+        p{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .link{
+        width:100%;
+        height: 15%;
+      
+        a{
+            padding:1rem;
+            text-decoration: none;
+            color:white;
+            display: block;
+            background: $ligth-blue;
+            text-align: center;
+        }
+    }
+}
