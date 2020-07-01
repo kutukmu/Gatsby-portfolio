@@ -32,8 +32,8 @@ const Project = ({ obj }) => {
                     })}
                 </div>
                 <div className={style.links}>
-                    <a href={demo}><FaShareSquare /></a>
-                    <a href={github}> <FaGithubSquare /></a>
+                    <a href={demo} target="_blank"><FaShareSquare /></a>
+                    <a href={github} target="_blank"> <FaGithubSquare /></a>
 
                 </div>
             </div>

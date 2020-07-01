@@ -1,16 +1,14 @@
 @import "../variables.scss";
 @import "../main.scss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
 
 .template{
     width: 100%;
         .inner{
             width:90%;
             margin:0 auto;
+            position: relative;
 
-            h3{
-                color:red;
-                margin-top:1rem;;
-            }
             .img{
                 width:100%;
                 height: 50vh;
@@ -22,7 +20,38 @@
             }
 
             .content{
-               width:100%;
+               width:90%;
+               padding:2rem;
+                margin:0 auto;
+               
+               transform: translateY(-10%);
+               background: #ccd6f6;
+
+            h1{
+                font-family: 'Playfair Display', serif;
+                font-size: 2.9rem;
+                text-align: center;
+                margin:1rem 0;
+            }
+
+            h2{
+                font-weight: 400;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            h3{
+                font-size: 1.6rem;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            p{
+                line-height: 2rem;
+                font-size: 20px;
+                margin-bottom: 1rem;
+            }
+
                blockquote {
                    width:100%;
                    height: 50px;

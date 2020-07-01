@@ -13,7 +13,7 @@ const Header = () => {
                         <Navbar />
                     </nav>
                     <div className={style.cv}>
-                        <a href="#">RESUME</a>
+                        <Link to="/contact">Contact</Link>
                     </div>
                 </div>
             </div>

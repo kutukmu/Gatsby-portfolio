@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../Components/Layout/Layout"
 import Hero from "../Components/Hero/Hero"
 import Services from "../Components/Services/Service"
-import Jobs from "../Components/Jobs/Jobs"
+
 import Projects from "../Components/Projects/Projects"
 import Blogs from "../Components/Blogs/Blogs"
 import "../main.scss"
@@ -19,7 +19,6 @@ export default function Home({ data }) {
     <Layout>
       <Hero />
       <Services />
-      <Jobs />
       <Projects list={Project} isBtn={true} />
       <Blogs blog={Blog} />
     </Layout>

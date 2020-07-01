@@ -9,7 +9,7 @@ const Blog = ({ Content, Date, Description, Title, slug, Image }) => {
     return (
         <div className={style.blog}>
             <div className={style.img}>
-                <Img fluid={Image.childImageSharp.fluid} />
+                <Img fluid={Image.childImageSharp.fluid} className={style.giamge} />
             </div>
             <div className={style.desc}>
                 <h3>{Title}</h3>

@@ -10,10 +10,6 @@ const navItems = [
         url: "/about"
     },
     {
-        name: "Contact",
-        url: "/contact"
-    },
-    {
         name: "Projects",
         url: "/projects"
     },

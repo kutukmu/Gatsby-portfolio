@@ -4,19 +4,34 @@
 .blog{
     width:100%;
     height: 100%;
+   cursor: pointer;
+    &:hover{
+        .img{
+            .giamge{
+                transform: scale(1.1);
+            }
+        }
+    }
+
     .img{
         width:100%;
         height: 50%;
+        overflow: hidden;
         
         .giamge{
             width:100%;
             height: 100%;
+            object-fit: cover;
+            transition: .5s ease-in-out;
+           
         }
     }
 
+
+
     .desc{
         width:100%;
-        height: 35%;
+        height: 40%;
       
         padding: .7rem;
         p{
@@ -27,9 +42,12 @@
 
     .link{
         width:100%;
-        height: 15%;
-      
+        height: 10%;
+        display: flex;
+        justify-content: flex-end;
+       
         a{
+            width: 100%;
             padding:1rem;
             text-decoration: none;
             color:white;
