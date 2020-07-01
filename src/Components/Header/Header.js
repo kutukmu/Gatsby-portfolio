@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import style from "./Header.module.scss"
 import Navbar from "../../constants/navItems"
+import { FaAlignRight } from 'react-icons/fa'
 
 const Header = () => {
     return <header>
@@ -15,6 +16,10 @@ const Header = () => {
                     <div className={style.cv}>
                         <Link to="/contact">Contact</Link>
                     </div>
+
+                    <button>
+                        <FaAlignRight />
+                    </button>
                 </div>
             </div>
         </div>

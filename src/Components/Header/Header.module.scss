@@ -12,6 +12,7 @@ header{
                 display:flex;
                 justify-content: space-between;
                 align-items: center;
+                position: relative;
                 .logo{
                 
                     a{
@@ -53,6 +54,10 @@ header{
 
                             }
                         }
+
+                        @include media("<=tablet"){
+                            display: none;
+                        }
                     }
                 }
 
@@ -69,8 +74,36 @@ header{
                             color:$ligth-blue;
                         }
                     }
+
+                    @include media("<=tablet"){
+                        display: none;
+                    }
                    
                 }
+
+                button{
+                    position: absolute;
+                    display: none;
+                    top:3px;
+                    right:0;
+                    background: none;
+                    font-size: 2rem;
+                    color:$green;
+                    border:none;
+                    cursor: pointer;
+
+
+                    @include media("<=tablet"){
+                        display: block;
+                    }
+
+                    
+                }
+
+
+
+
+
             }
         }
     }
