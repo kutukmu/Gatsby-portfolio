@@ -4,7 +4,7 @@ import { FaCode, FaSketch, FaAdobe } from "react-icons/fa"
 
 const services = [
     {
-        title: "Front-end Development",
+        title: "Development",
         icon: <FaCode />,
         text: "HTML, CSS, and JavaScript are my main tools and also I like to use Sass while I am coding, I have a passion for developing functional user experience websites and programs while keeping clean code base"
     },

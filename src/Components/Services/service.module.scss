@@ -1,29 +1,49 @@
 @import "../../variables.scss";
 @import "../../main.scss";
-
+@import "../../breakpoint.scss";
 
 
 .services{
     width:100%;
    
     background: white;
+    @include media("<=tablet"){
+     
+      margin-top:2rem;
+    }
+
+
   .inner{
       width:100%;
       height: 60vh;
       align-items: flex-start;
       display: flex;
+
+      @include media("<=tablet"){
+        flex-direction: column;
+      }
       .main{
         width:70%;
         height: 100%;
+        
         
         display: flex;
         background: white;
         justify-content: center;
         align-items: center;
+        @include media("<=tablet"){
+          margin:0 auto;
+          
+        }
         .box{
           border:1px solid $blue;
           width:60%;
           background: white;
+          @include media("<=tablet"){
+            width:100%;
+            margin-top:1rem;
+            
+          }
   
           .bluebox{
             position: relative;
@@ -31,17 +51,10 @@
             width:100%;
             height: 100px;
 
-
-            &:after{
-              content: "";
-              position: absolute;
-              top:50%;
-              left:-20%;
-              width:150px;
-              height: 5px;
-              mix-blend-mode: difference;
-              background:white;
+            @include media("<=tablet"){
+              height: 70px;
             }
+
             h1{
               color:white;
               position: absolute;
@@ -53,25 +66,44 @@
               text-transform:uppercase;
               font-weight: 500;
               font-size: 35px;
+              @include media("<=tablet"){
+                font-size: 25px;
+              }
             }
           }
           p{
           
             width:70%;
             margin:2rem auto;
+            @include media("<=tablet"){
+              width:95%;
+            }
           }
+        }
+
+
+        @include media("<=tablet"){
+          width:90%;
         }
       }
       .buttons{
         width:30%;
         height: 100%;
         
+        @include media("<=tablet"){
+          width:100%;
+        }
         display: flex;
         justify-content: center;
         align-items:center;
-            .btnwrapper{
-                width:60%;
         
+            .btnwrapper{
+                width:250px; 
+                @include media("<=tablet"){
+                  display: flex;
+                  width:100%;
+                  justify-content: space-between;
+                }
                 .button{
                     display: flex;
                     justify-content: center;
@@ -84,6 +116,16 @@
                     box-shadow: 0px 5px 20px  rgba(75,79,124,0.1);
                     margin-top:1.4rem;
                     cursor:pointer;
+
+                    @include media("<=tablet"){
+                      
+                      width:30%;
+                    }
+
+                    @include media("<=414px"){
+                      font-size:.8rem;
+                      width:31%;
+                    }
                     
 
                     &:hover{
@@ -101,12 +143,18 @@
                    
                 }
 
+              
+
                 
             }
        
       }
-  }
+
     
+  }
+
+
 }
+
 
 

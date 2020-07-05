@@ -6,12 +6,28 @@
     width:100%;
     margin-top: 4rem;
     height: 60vh;
-   
+    
     display: flex;
+
+    @include media("<=1200px"){
+        flex-direction: column;
+        height: 100vh;
+    }
+    @include media("<=tablet"){
+        padding:10px;
+        box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.13);
+        height: auto;
+    }
     .img{
+       
         width:60%;
         height: 100%;
+        border:1px solid;
         position: relative;
+        @include media("<=1200px"){
+            width:100%;
+            height: 60%;
+        }
         .imglayer{
             position: absolute;
             width:100%;
@@ -36,52 +52,95 @@
     }
     
     .info{
+        
         width:30%;
         height: 100%;
         display: flex;
         flex-direction: column;
+       
         align-items: center;
         justify-content: center;
+
+        @include media("<=1400px"){
+            width:35%;    
+        }
+
+        @include media("<=1200px"){
+            width:60%;
+        }
+
+        @include media("<=tablet"){
+            width:100%;
+            justify-content: flex-start;
+        }
+
+
         .title{
             width: 100%;
-            height: 10%;
+
+           margin-bottom:1rem;
            
             display: flex;
             justify-content:flex-end;
+            @include media("<=1200px"){
+                justify-content:flex-start;
+        }
              h3{
                  font-size: 2rem;
+                 margin-top: 10px;
+
+                 @include media("<=tablet"){
+                    font-size: 1.3rem;
+            }
              }
         }
 
         .description{
             width: 100%;
-            height: 50%;
+            
             position: relative;
+            
+            
                 .inner{
-                    position: absolute;
-                    z-index: 6;
+                   
+                    position: relative;
+                    z-index: 5;
                     width:120%;
+
+                    transform: translateX(-20%);
                     padding:1rem;
                     border-radius: 5px;
-                    top:20%;
-                    left:-20%;
-                    padding:1rem;
+                
+                    margin-bottom: 10px;
                     background: lighten($blue , 30%);
                     color:white;
+                    @include media("<=1200px"){
+                        width:100%;
+                        transform: translateX(0%);
+                        text-align: start;
+                    }
+                    
+                   
                    
                 }
         }
 
         .stack{
             width: 100%;
-            height: 10%;
+            
             display: flex;
             justify-content:flex-end;
             align-items: center;
+            flex-wrap: wrap;
+            @include media("<=1200px"){
+                justify-content:flex-start;
+                margin-bottom:1rem;
+        }
+            
             .item{
                 
                 padding:.3rem;
-               
+               margin-top:5px;
                 background: $blue;
                 color:white;
                 border-radius: 5px;
@@ -98,10 +157,13 @@
 
         .links{
             width: 100%;
-            height: 10%;
+            
             display: flex;
             justify-content:flex-end;
             align-self: center;
+            @include media("<=1200px"){
+                justify-content:flex-start;
+        }
            
             a{
                 text-decoration: none;
