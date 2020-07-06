@@ -10,7 +10,7 @@ const Header = () => {
             <div className={style.wrapper}>
                 <div className={style.inner}>
                     <div className={style.logo}><Link to="/">KerimK.</Link></div>
-                    <nav className={style.nav}>
+                    <nav className={`${style.nav}`}>
                         <Navbar />
                     </nav>
                     <div className={style.cv}>

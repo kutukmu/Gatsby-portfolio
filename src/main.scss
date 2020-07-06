@@ -15,7 +15,7 @@ body{
 
 .container{
     width:80vw;
-    border:1px solid yellow;
+  
     
     @include media("<=tablet"){
         width:92vw;
@@ -120,11 +120,12 @@ body{
 
 .contact{
     background:#ccd6f662;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     width:100%;
+    
     .contact-inner{width:100%;
         
         .contact-form{
@@ -140,6 +141,12 @@ body{
            @include media("<=tablet"){
             width:70%;
         }
+
+        @include media("<=411px"){
+            width:90%;
+        }
+
+        
 
 
 
