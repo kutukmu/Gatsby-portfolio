@@ -2,7 +2,8 @@ import React from "react"
 import style from "./Blogs.module.scss"
 import Title from "../Title/Title"
 import Blog from "../Blog/Blog"
-const Blogs = ({ blog }) => {
+import { Link } from "gatsby"
+const Blogs = ({ blog, link }) => {
 
 
 
@@ -18,6 +19,7 @@ const Blogs = ({ blog }) => {
                         })}
 
                     </div>
+                    <Link to={`/${(link === "blogs") ? "blogs" : ""}`} className={style.button}>{(link === "blogs") ? "See More" : "Go Back"}</Link>
                 </div>
             </div>
         </div>

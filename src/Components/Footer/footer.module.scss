@@ -21,9 +21,14 @@
                         justify-content: space-between;
                         
                         width:15vw;
+                        
 
                         @include media("<=tablet"){
-                            width: 30vw;
+                            width: 33vw;
+                        }
+
+                        @include media("<=320px"){
+                            width: 40vw;
                         }
                         li{
                             margin:0;

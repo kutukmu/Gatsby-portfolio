@@ -19,8 +19,9 @@ export default function Home({ data }) {
     <Layout>
       <Hero />
       <Services />
-      <Projects list={Project} isBtn={true} />
-      <Blogs blog={Blog} />
+      <Projects list={Project} link="projects" />
+      <Blogs blog={Blog} link="blogs" />
+
     </Layout>
 
 

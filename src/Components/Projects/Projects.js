@@ -4,7 +4,7 @@ import style from "./Projects.module.scss"
 import Title from "../Title/Title"
 import Project from "../Project/Project"
 
-const Projects = ({ list, isBtn }) => {
+const Projects = ({ list, link }) => {
 
 
     return (
@@ -20,7 +20,7 @@ const Projects = ({ list, isBtn }) => {
                             })}
                         </div>
                     </div>
-                    {isBtn && <Link className={style.seemore} to="/projects" >See More Projects</Link>}
+                    <Link className={style.seemore} to={`/${(link === "projects") ? "projects" : ""}`} >{(link === "projects") ? "See More" : "Go Back"}</Link>
                 </div>
             </div>
         </div>

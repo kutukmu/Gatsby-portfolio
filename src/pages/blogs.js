@@ -4,12 +4,12 @@ import Blogs from "../Components/Blogs/Blogs"
 const Blog = ({ data }) => {
 
 
-    const { allStrapiBlogs: { nodes: Blog } } = data
-    return (
-        <Layout>
-            <Blogs blog={Blog} />
-        </Layout>
-    )
+  const { allStrapiBlogs: { nodes: Blog } } = data
+  return (
+    <Layout>
+      <Blogs blog={Blog} link="home" />
+    </Layout>
+  )
 }
 
 export default Blog

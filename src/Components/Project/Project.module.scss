@@ -11,7 +11,7 @@
 
     @include media("<=1200px"){
         flex-direction: column;
-        height: 100vh;
+        
     }
     @include media("<=tablet"){
         padding:10px;
@@ -22,16 +22,20 @@
        
         width:60%;
         height: 100%;
-        border:1px solid;
         position: relative;
+        border: 1px solid red;
         @include media("<=1200px"){
+            
             width:100%;
-            height: 60%;
+            height: 30vh;
+            border:1px solid blue;
+           
         }
         .imglayer{
             position: absolute;
             width:100%;
             height: 100%;
+
             transition: .3s ease-in-out;
             top:0;
             left:0;
@@ -39,8 +43,10 @@
             background: rgba(95, 158, 160, 0.473);
         }
         .image{
+            
             width:100%;
-            height: 100%;
+           height: 100%;
+            object-fit: cover;
     
         }
 
@@ -69,7 +75,7 @@
             width:60%;
         }
 
-        @include media("<=tablet"){
+        @include media("<=1200px"){
             width:100%;
             justify-content: flex-start;
         }

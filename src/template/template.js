@@ -4,6 +4,7 @@ import style from "./template.module.scss"
 import Img from "gatsby-image"
 import ReactMarkdown from "react-markdown"
 import Layout from "../Components/Layout/Layout"
+
 export const query = graphql`
 query MyQuery($slug: String!) {
   strapiBlogs(slug: {eq: $slug}) {
@@ -35,7 +36,12 @@ const Template = ({ data }) => {
                             </div>
                             <div className={style.content}>
                                 <ReactMarkdown source={data.strapiBlogs.Content} />
+
+                                <Link to="/blogs" className={style.btn}>Go Back</Link>
                             </div>
+
+
+
                         </div>
                     </div>
                 </div>

@@ -22,6 +22,10 @@
       @include media("<=tablet"){
         flex-direction: column;
       }
+
+      @include media("<=320px"){
+        height: 100vh;
+      }
       .main{
         width:70%;
         height: 100%;
@@ -93,6 +97,8 @@
         @include media("<=tablet"){
           width:100%;
         }
+
+        
         display: flex;
         justify-content: center;
         align-items:center;
@@ -125,6 +131,10 @@
                     @include media("<=414px"){
                       font-size:.8rem;
                       width:31%;
+                    }
+
+                    @include media ("<=320px"){
+                      font-size:.7rem;
                     }
                     
 

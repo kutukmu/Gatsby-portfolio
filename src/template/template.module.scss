@@ -8,6 +8,11 @@
             width:90%;
             margin:0 auto;
             position: relative;
+            @include media("<=tablet"){
+                width:100%;
+             
+         
+            }
 
             .img{
                 width:100%;
@@ -27,23 +32,42 @@
                transform: translateY(-10%);
                background: #ccd6f6;
 
+               @include media("<=tablet"){
+                   width:100%;
+                   transform: translateY(0);
+                   padding: 10px;
+            
+               }
+
             h1{
                 font-family: 'Playfair Display', serif;
                 font-size: 2.9rem;
                 text-align: center;
                 margin:1rem 0;
+
+                @include media("<=tablet"){
+                        font-size: 2rem;
+                        text-align: left;
+                }
+ 
             }
 
             h2{
                 font-weight: 400;
                 font-size: 2rem;
                 margin-bottom: 2rem;
+                @include media("<=tablet"){
+                    font-size: 1.4rem;
+            }
             }
 
             h3{
                 font-size: 1.6rem;
                 font-weight: 600;
                 margin-bottom: 10px;
+                @include media("<=tablet"){
+                    font-size: 1.6rem;
+            }
             }
 
             p{
@@ -81,7 +105,28 @@
                 color: yellow;
                 overflow-x: scroll;
                 padding: 1rem 1.5rem;
-                border-radius: 10px;               }
+                border-radius: 10px;               
             }
+
+            .btn{
+                text-decoration: none;
+                display: block;
+                background: $ligth-blue;
+                color:white;
+                padding: 1rem;
+                width: 200px;
+                text-align: center;
+                margin: 2rem auto;
+    
+            }
+
+            
+            
         }
+        
+            
+        
+
+        } 
+       
 }

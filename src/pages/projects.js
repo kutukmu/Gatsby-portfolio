@@ -3,16 +3,22 @@ import Projects from "../Components/Projects/Projects"
 import Layout from "../Components/Layout/Layout"
 
 
+
 const Project = ({ data }) => {
 
-    const { allStrapiProjects: { nodes: Project } } = data
+  const { allStrapiProjects: { nodes: Project } } = data
 
 
-    return (
-        <Layout>
-            <Projects list={Project} isBtn={false} />
-        </Layout>
-    )
+  return (
+    <div className="project">
+      <Layout>
+        <Projects list={Project} isBtn={false} />
+
+
+      </Layout>
+    </div>
+
+  )
 }
 
 export default Project
