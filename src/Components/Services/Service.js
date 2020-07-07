@@ -34,6 +34,17 @@ const Services = () => {
     }
 
 
+    const handleClick = (idx) => {
+        setClick(prev => {
+            return {
+                click: prev.click + 1
+            }
+        })
+
+        setTimeout(() => {
+            setState(idx)
+        }, 1000)
+    }
 
 
 
@@ -56,25 +67,9 @@ const Services = () => {
                         <div className={style.buttons}>
                             <div className={style.btnwrapper}>
                                 {services.map((n, idx) => {
-                                    return <div key={idx} onClick={() => {
-                                        setClick(prev => {
-                                            return {
-                                                click: prev.click + 1
-                                            }
-                                        })
-
-                                        setTimeout(() => {
-                                            setState(idx)
-                                        }, 1000)
-
-
-
-
-
-
-                                    }} className={style.button}>
+                                    return <button key={idx} onClick={() => handleClick(idx)} className={style.button} onKeyDown={() => handleClick(idx)}>
                                         {n.title}
-                                    </div>
+                                    </button>
                                 })}
 
 

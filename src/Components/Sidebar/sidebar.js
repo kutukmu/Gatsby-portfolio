@@ -10,7 +10,7 @@ const Sidebar = ({ isClose, handleClose }) => {
         <div className={`${style.sidebar} ${(isClose) ? "" : style.open}`}>
             <div className={style.top}>
                 <div className={style.logo}><Link to="/">KerimK.</Link></div>
-                <div className={style.btn}><button onClick={() => handleClose()}><IoMdClose></IoMdClose></button></div>
+                <div className={style.btn}><button type="button" aria-label="Save" onClick={() => handleClose()}><IoMdClose role="icon"></IoMdClose></button></div>
             </div>
             <Navbar />
             <div className={style.contactbtn}><Link to="/contact">Contact</Link></div>

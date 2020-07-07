@@ -1,12 +1,12 @@
 import React from "react"
-
+import { graphql } from 'gatsby'
 import Layout from "../Components/Layout/Layout"
 import Img from "gatsby-image"
 
 const About = ({ data }) => {
 
 
-    const { file: { childImageSharp: { fluid: fluid } } } = data
+    const { file: { childImageSharp: { fluid } } } = data
     return (
         <Layout>
             <div className="about">

@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../Components/Layout/Layout"
 import Hero from "../Components/Hero/Hero"
 import Services from "../Components/Services/Service"
-
+import { graphql } from 'gatsby'
 import Projects from "../Components/Projects/Projects"
 import Blogs from "../Components/Blogs/Blogs"
 import "../main.scss"

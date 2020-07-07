@@ -1,13 +1,13 @@
 import React from "react"
 import style from "./Project.module.scss"
 import Img from "gatsby-image"
-import Link from "gatsby"
+
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 const Project = ({ obj }) => {
 
 
     const { Title, demo, description, github, Stack, Image } = obj;
-    console.log(Image)
+
 
 
     return (
@@ -27,13 +27,13 @@ const Project = ({ obj }) => {
                     <div className={style.inner}>{description}</div>
                 </div>
                 <div className={style.stack}>
-                    {Stack.map(n => {
-                        return <div className={style.item}>{n.name}</div>
+                    {Stack.map((n, idx) => {
+                        return <div key={idx} className={style.item}>{n.name}</div>
                     })}
                 </div>
                 <div className={style.links}>
-                    <a href={demo} target="_blank"><FaShareSquare /></a>
-                    <a href={github} target="_blank"> <FaGithubSquare /></a>
+                    <a href={demo} type="button" aria-label="Save" rel="noopener noreferrer" target="_blank"><FaShareSquare role="button" /></a>
+                    <a href={github} rel="noopener noreferrer" target="_blank"> <FaGithubSquare role="button" /></a>
 
                 </div>
             </div>

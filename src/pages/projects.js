@@ -1,7 +1,7 @@
 import React from "react"
 import Projects from "../Components/Projects/Projects"
 import Layout from "../Components/Layout/Layout"
-
+import { graphql } from 'gatsby'
 
 
 const Project = ({ data }) => {
