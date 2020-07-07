@@ -4,7 +4,13 @@ import style from "./Header.module.scss"
 import Navbar from "../../constants/navItems"
 import { FaAlignRight } from 'react-icons/fa'
 
-const Header = () => {
+const Header = ({ handleOpen }) => {
+
+
+
+
+
+
     return <header>
         <div className={style.container}>
             <div className={style.wrapper}>
@@ -17,7 +23,7 @@ const Header = () => {
                         <Link to="/contact">Contact</Link>
                     </div>
 
-                    <button>
+                    <button onClick={() => handleOpen()}>
                         <FaAlignRight />
                     </button>
                 </div>

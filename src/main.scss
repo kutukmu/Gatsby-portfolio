@@ -38,7 +38,7 @@ body{
         .about-inner-left{
             width:50%;
             padding:2rem 0;
-            border:1px solid red;
+            
 
             @include media("<=1300px"){
                 width:60%

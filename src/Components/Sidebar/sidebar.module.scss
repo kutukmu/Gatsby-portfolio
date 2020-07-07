@@ -1,16 +1,73 @@
 @import "../../variables.scss";
 @import "../../main.scss";
 
+
+
+
 .sidebar{
     position: fixed;
     top:0;
     left:0;
     right:0;
     bottom:0;
-    width:100%;
+    width:0;
     height: 100%;
     z-index: 10;
-    background-color: yellow;
+    background-color: $blue;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &.open{
+        width: 100%;
+        li{
+            display: block;
+        }
+        a{
+            display: block;
+        }
+
+        .contactbtn{
+            a{
+                display: block;
+            }
+        }
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        .logo{
+            a{
+                text-decoration: none;
+                transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                        font-family: $fontfamily;
+                        font-size: 24px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        color:white;
+                        margin-left:1rem;
+                        &:hover{
+                            color:$green;
+                        }
+            }
+        }
+
+        .btn{
+            button{
+                background: none;
+                    font-size: 2rem;
+                    color:$green;
+                    border:none;
+                    margin-right: 1rem;
+                    cursor: pointer;
+                   
+            }   
+        }   
+    }
 
 
     ul{
@@ -21,13 +78,85 @@
             width: 100%;
             margin:0;
             padding:0;
+            display: none;
+            animation-name:moveRigth;
+            animation-duration: .75s;
+            animation-timing-function: ease-in;
+            @for $i from 1 through 4 {
+                &:nth-child(#{$i}) {
+                  animation-delay:  #{$i * .13}s;
+                }
+              }
+            
+            
+
+           
             a{
-                padding: 1rem;
-                display: block;
-                border:1px solid red;
+                padding: 1.2rem;
+                display: none;
+                background-color: $ligth-blue;
+                width:40%;
+                margin:0 auto;
+                text-align: center;
+                text-decoration: none;
+                color:white;
+                margin-top:1.8rem;
+           
+               
+                
+
+
+                @include media("<=375px"){
+                    width:60%
+                }
+
+                
+            }
+        }
+    }
+
+    .contactbtn{
+            
+        a{
+            padding: 1rem;
+            display: none;
+            background-color: $green;
+            border-radius: 5px;
+            
+            width:28%;
+            margin:0 auto;
+            text-align: center;
+            text-decoration: none;
+            color:black;
+            text-transform: uppercase;
+            margin-top:1.5rem;
+            margin-bottom:2rem;
+            font-size: 1.1rem;
+            animation-name:moveRigth;
+            animation-duration: 1s;
+            
+            @include media("<=414px"){
+                width:50%
             }
         }
     }
 
 
+}
+
+
+@keyframes moveRigth{
+    0%{
+        transform: translateX(-500px);
+        opacity: 0;
+       
+        
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+        
+        
+    }
 }

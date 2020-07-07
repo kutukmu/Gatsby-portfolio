@@ -23,8 +23,8 @@ const items = navItems.map((n, idx) => {
     return <li key={idx}><Link to={n.url}>{n.name}</Link></li>
 })
 
-const Navbar = ({ side }) => {
-    return <ul className={`${side && ""}`}>
+const Navbar = () => {
+    return <ul >
         {items}
     </ul>
 }
