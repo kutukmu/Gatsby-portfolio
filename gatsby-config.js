@@ -29,6 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
+        apiURL: process.env.DEPLOY_URL ? `https://kerim-newdb.herokuapp.com` : `https://localhost:1337`
         apiURL: `https://kerim-newdb.herokuapp.com`,
         contentTypes: [`jobs`, `projects`, `blogs`]
 
