@@ -6,7 +6,7 @@ import { graphql } from 'gatsby'
 import Projects from "../Components/Projects/Projects"
 import Blogs from "../Components/Blogs/Blogs"
 import "../main.scss"
-import Seo from "../Components/Seo"
+
 export default function Home({ data }) {
 
 

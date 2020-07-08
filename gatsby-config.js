@@ -7,7 +7,7 @@ const path = require("path")
 module.exports = {
   siteMetadata: {
     title: "Kerim Kutuk || Front End Developer",
-    description: "This is my Portfolio Site",
+    description: "Kerim Kutuk is a software engineer based in Chicago, IL who specializes in building (and occasionally designing) exceptional websites, applications. ",
     author: "Kerim Kutuk",
     twitterUsername: "@Gatsbyup1",
     image: "/twitter_img.png",
@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://kerim-portfolio.herokuapp.com`,
+        apiURL: `https://kerim-newdb.herokuapp.com`,
         contentTypes: [`jobs`, `projects`, `blogs`]
 
 
