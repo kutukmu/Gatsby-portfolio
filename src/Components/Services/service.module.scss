@@ -33,6 +33,7 @@
         
         display: flex;
         background: white;
+        
         justify-content: center;
         align-items: center;
         @include media("<=tablet"){
@@ -93,10 +94,10 @@
       .buttons{
         width:30%;
         height: 100%;
-        
+       
         @include media("<=tablet"){
           width:100%;
-          margin-top:10px;
+          margin-top:20px;
           
         }
 
