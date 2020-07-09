@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: "Kerim Kutuk | Software Engineer",
     description: "Kerim Kutuk is a software engineer based in Chicago, IL who specializes in building (and occasionally designing) exceptional websites, applications. ",
-    author: "Kerim Kutuk",
+    author: "Kerim Kutuk | Software Engineer",
     twitterUsername: "@Gatsbyup1",
     image: "/twitter_img.png",
     siteUrl: "https://www.kutukmu.com",
