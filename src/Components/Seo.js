@@ -28,6 +28,11 @@ const SEO = ({ title, desc }) => {
     return <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
         <meta name="description" content={(desc) ? desc : siteDesc} />
         <meta name="image" content={image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content={author} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={`${siteUrl}${image}`} />
     </Helmet>
 
 

@@ -24,7 +24,7 @@ module.exports = {
       anonymize: true,
       // Setting this parameter is also optional
     },
-  },
+  }, `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
