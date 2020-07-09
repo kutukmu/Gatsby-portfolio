@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Layout from "../Components/Layout/Layout"
-
+import SEO from "../Components/Seo"
 const Contact = () => {
 
     const [name, setName] = useState("")
@@ -16,7 +16,7 @@ const Contact = () => {
 
 
         <Layout>
-
+            <SEO title="Contact" />
 
             <div className="contact">
                 <div className="container">

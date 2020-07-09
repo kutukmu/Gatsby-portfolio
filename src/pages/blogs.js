@@ -2,12 +2,14 @@ import React from "react"
 import Layout from "../Components/Layout/Layout"
 import Blogs from "../Components/Blogs/Blogs"
 import { graphql } from 'gatsby'
+import SEO from "../Components/Seo"
 const Blog = ({ data }) => {
 
 
   const { allStrapiBlogs: { nodes: Blog } } = data
   return (
     <Layout>
+      <SEO title="Blogs" />
       <Blogs blog={Blog} link="home" />
     </Layout>
   )

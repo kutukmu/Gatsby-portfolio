@@ -2,7 +2,7 @@ import React from "react"
 import Projects from "../Components/Projects/Projects"
 import Layout from "../Components/Layout/Layout"
 import { graphql } from 'gatsby'
-
+import SEO from "../Components/Seo"
 
 const Project = ({ data }) => {
 
@@ -12,6 +12,7 @@ const Project = ({ data }) => {
   return (
     <div className="project">
       <Layout>
+        <SEO title="Projects" />
         <Projects list={Project} isBtn={false} />
 
 

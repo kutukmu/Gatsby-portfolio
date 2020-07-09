@@ -2,13 +2,14 @@ import React from "react"
 import { graphql } from 'gatsby'
 import Layout from "../Components/Layout/Layout"
 import Img from "gatsby-image"
-
+import SEO from "../Components/Seo"
 const About = ({ data }) => {
 
 
     const { file: { childImageSharp: { fluid } } } = data
     return (
         <Layout>
+            <SEO title="About" />
             <div className="about">
                 <div className="container">
                     <div className="wrapper">

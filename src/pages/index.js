@@ -5,6 +5,7 @@ import Services from "../Components/Services/Service"
 import { graphql } from 'gatsby'
 import Projects from "../Components/Projects/Projects"
 import Blogs from "../Components/Blogs/Blogs"
+import SEO from "../Components/Seo"
 import "../main.scss"
 
 export default function Home({ data }) {
@@ -17,6 +18,7 @@ export default function Home({ data }) {
 
   return <div>
     <Layout>
+      <SEO title="Home" />
       <Hero />
       <Services />
       <Projects list={Project} link="projects" />

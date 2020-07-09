@@ -6,12 +6,12 @@
 const path = require("path")
 module.exports = {
   siteMetadata: {
-    title: "Kerim Kutuk || Front End Developer",
+    title: "Kerim Kutuk | Software Engineer",
     description: "Kerim Kutuk is a software engineer based in Chicago, IL who specializes in building (and occasionally designing) exceptional websites, applications. ",
     author: "Kerim Kutuk",
     twitterUsername: "@Gatsbyup1",
     image: "/twitter_img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    siteUrl: "https://www.kutukmu.com",
   },
   plugins: [{
     resolve: `gatsby-plugin-google-analytics`,
