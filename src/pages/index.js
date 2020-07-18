@@ -2,38 +2,34 @@ import React from "react"
 import Layout from "../Components/Layout/Layout"
 import Hero from "../Components/Hero/Hero"
 import Services from "../Components/Services/Service"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 import Projects from "../Components/Projects/Projects"
 import Blogs from "../Components/Blogs/Blogs"
 import SEO from "../Components/Seo"
 import "../main.scss"
 
 export default function Home({ data }) {
+  const {
+    allStrapiProjects: { nodes: Project },
+    allStrapiBlogs: { nodes: Blog },
+  } = data
 
-
-  const { allStrapiProjects: { nodes: Project }, allStrapiBlogs: { nodes: Blog } } = data;
-
-
-
-
-  return <div>
-    <Layout>
-      <SEO title="Home" />
-      <Hero />
-      <Services />
-      <Projects list={Project} link="projects" />
-      <Blogs blog={Blog} link="blogs" />
-
-    </Layout>
-
-
-  </div>
+  return (
+    <div>
+      <Layout>
+        <SEO title="Home" />
+        <Hero />
+        <Services />
+        <Projects list={Project} link="projects" />
+        <Blogs blog={Blog} link="blogs" />
+      </Layout>
+    </div>
+  )
 }
-
 
 export const query = graphql`
   {
-    allStrapiProjects {
+    allStrapiProjects(filter: { fetured: { eq: true } }) {
       nodes {
         Title
         demo
@@ -53,8 +49,7 @@ export const query = graphql`
       }
     }
 
-
-    allStrapiBlogs(sort: {fields: Date, order: DESC}, limit: 3) {
+    allStrapiBlogs(sort: { fields: Date, order: DESC }, limit: 3) {
       nodes {
         Content
         Date(formatString: "MMMM Do. YYYY")
