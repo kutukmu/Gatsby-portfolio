@@ -25,7 +25,7 @@ const Services = () => {
         let tl = gsap.timeline();
         tl.to(box, {
             duration: 1,
-            x: -950,
+            x: -1150,
             ease: "power3.inOut"
         }).to(box, {
             duration: 1,
