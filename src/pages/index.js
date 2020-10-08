@@ -4,14 +4,12 @@ import Hero from "../Components/Hero/Hero"
 import Services from "../Components/Services/Service"
 import { graphql } from "gatsby"
 import Projects from "../Components/Projects/Projects"
-import Blogs from "../Components/Blogs/Blogs"
 import SEO from "../Components/Seo"
 import "../main.scss"
 
 export default function Home({ data }) {
   const {
     allStrapiProjects: { nodes: Project },
-    allStrapiBlogs: { nodes: Blog },
   } = data
 
   return (
@@ -21,7 +19,6 @@ export default function Home({ data }) {
         <Hero />
         <Services />
         <Projects list={Project} link="projects" />
-        <Blogs blog={Blog} link="blogs" />
       </Layout>
     </div>
   )
@@ -29,33 +26,16 @@ export default function Home({ data }) {
 
 export const query = graphql`
   {
-    allStrapiProjects(filter: { fetured: { eq: true } }) {
+    allStrapiProjects(filter: { featured: { eq: true } }) {
       nodes {
         Title
         demo
         description
         github
-        Stack {
+        stack {
           id
           name
         }
-        Image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-
-    allStrapiBlogs(sort: { fields: Date, order: DESC }, limit: 3) {
-      nodes {
-        Content
-        Date(formatString: "MMMM Do. YYYY")
-        Description
-        Title
-        slug
         Image {
           childImageSharp {
             fluid {
