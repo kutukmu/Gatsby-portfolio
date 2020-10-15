@@ -15,7 +15,7 @@ const About = ({ data }) => {
                     <div className="wrapper">
                         <div className="about-inner">
                             <div className="about-inner-left">
-                                <h1>Hey, I'm Kerim </h1>
+                                <h1>Hey, I'm Kerim</h1>
                                 <p> I'm a self-taught software engineer and I have a passion about combining clean code with attractive design. </p>
                                 <div className="about-text-underline"></div>
                                 <p>I'm a master student at Chicago State University studying computer science. I have experience developing and creating websites, from singe page websites to multipages. One of my aim when I create software is coding clean and effective to prevent confusion between colleagues. And I also like to provide functional and pixel-perfect user experiences.</p>
