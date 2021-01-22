@@ -16,11 +16,11 @@ const About = ({ data }) => {
                         <div className="about-inner">
                             <div className="about-inner-left">
                                 <h1>Hey, I'm Kerim</h1>
-                                <p> I'm a self-taught software engineer and I have a passion about combining clean code with attractive design. </p>
+                                <p> I am a Computer Science grad student, with previous experience as a Software Engineer, and have a passion for coding and a relentless drive for continuous improvement in all of my endeavors.</p>
                                 <div className="about-text-underline"></div>
-                                <p>I'm a master student at Chicago State University studying computer science. I have experience developing and creating websites, from singe page websites to multipages. One of my aim when I create software is coding clean and effective to prevent confusion between colleagues. And I also like to provide functional and pixel-perfect user experiences.</p>
-                                <p>One of my passion in this life is coding. Since I love coding I also like to learn modern technologies to keep myself up to date. And I believe that it helps me to create seamless user experiences with pure, effective, and flexible code. I'm always looking for chances to work with people who like to share their skills as much as I want to learn.At th end, my main aim is to create something creative with people that help me to discover my skills.</p>
-                                <p>When I'm not coding, I'm usually running, traveling, watching movies, or listening music.</p>
+                                <p>I am a Computer Science grad student, with previous experience as a Software Engineer, and have a passion for coding and a relentless drive for continuous improvement in all of my endeavors.</p>
+                                <p>Currently, I am a full-stack Developer, soaking up as much knowledge and practice as I can in an attempt to perfect my craft. I have experience using Python, TensorFlow, ReactJS, Machine Learning, C++, Javascript, SQL, Node.js and I've just started diving into deep learning and self-driving car technologies.</p>
+                                <p>In addition to software development, I have broad interests including science education, management, science marketing, and product management, science policy, education policy, editing, and writing for both scientific and general audiences.</p>
                             </div>
                             <div className="about-inner-rigth">
                                 <div className="about-img-container">

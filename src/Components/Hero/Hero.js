@@ -81,7 +81,7 @@ const Hero = () => {
                         <div className={style.line} ref={el => line3 = el}>
                             <h3>Web design is my passion </h3>
                         </div>
-                        <p ref={el => p = el}>I'm a software engineer who has a passion for combining clean code with attractive design. I am also Master student at Chicago State University and studying Computer Science </p>
+                        <p ref={el => p = el}>I am a Computer Science grad student, with previous experience as a Software Engineer, and have a passion for coding and a relentless drive for continuous improvement in all of my endeavors</p>
                         <div className={style.touch} >
                             <div className={style.btnlayer} ref={el => btn = el}></div>
                             <Link to="/contact">Get in touch</Link>
